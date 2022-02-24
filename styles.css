@@ -1,0 +1,314 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+}
+body{
+    background-color: #e4e7ed;
+}
+ a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #2874f0;
+    display: flex;
+    width: 100%;
+    height: 56px;
+    top: 0px;
+}
+.l-header{
+    width: 23%;
+    text-align: right;
+    margin:6px 0px;
+    font-style: italic;
+}
+.l-header >a{
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -.9px;
+}
+.l-header-p{
+    line-height: 0%;
+}
+.l-header-p a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: -.9px;
+}
+.l-header-p span {
+    color: yellow;
+    font-size: 11.5px;
+    letter-spacing: -.9px;
+}
+.l-header-p:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.c-header{
+    width: 38%;
+    align-items: left;
+    padding-left: 13px;
+    position: relative;
+    display: flex;
+}
+.search-item{
+    margin-top: 0px;
+    padding: 0 18px;
+    font-size: 14px;
+    background-color:transparent;
+    border:0px;
+    height: 36px;
+}
+.search-div{
+    margin: 9.5px 0;
+    border: 0px;
+    height: 36px;
+    width: 84%;
+    background-color: white;
+    overflow: hidden;
+
+}
+input.search-item{
+    width: inherit;
+    position: absolute;
+}
+input.search-item:focus{
+    outline: none;
+}
+.search-div button{
+    position: relative;
+     float: right;
+     z-index: 1;
+     height: 100%;
+}
+.search-div button.search-item:hover{
+    cursor: pointer;
+}
+
+.r-header{
+    padding-left: 70px;
+    padding-top: 5px;
+    width: 40%;
+    height: 56px;
+    font-size: 15px;
+    line-height: 50px;
+    display: flex;
+    color: white;
+}
+.r-header .active{
+    background-color: white;
+    color: #2874f0 !important; 
+    padding: 6px 38px;
+    font-weight: 500;
+    margin:0px 30px;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}  
+.r-more {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #7f7f7f;
+}
+  
+.dropdown-content a:hover {
+    background-color: white
+}
+.r-more:hover .more-content {
+    display: block;
+}
+.r-more img{
+    padding-left: 3px;
+}
+.r-more:hover img{
+    animation: dpd .3s forwards;
+}
+@keyframes dpd{
+    100% {transform: rotate(180deg);}
+}
+.r-header a:last-of-type{
+    margin-left: 15px;
+}
+
+.tbar{
+    width: 50%;
+}
+.t-bar a{
+    color: black;
+}
+.category-row{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: auto;
+    text-align: center;  
+    background-color: white;
+}
+.category-col{
+    padding: 10px 0px;
+    cursor: pointer;
+    padding-left: 22px;
+}
+.category-col h5{
+    font-weight: 500;
+}
+.category-col img{
+    width: 64px;
+    height: 60px;
+    margin: 0px 30px;
+}
+.category-col:hover h5{
+    color: #2874f0;
+}
+
+.fas:hover .fashion{
+    display: block;
+}
+.ele:hover .elec{
+    display: block;
+}
+.hom:hover .home{
+    display: block;
+}
+.ap:hover .app{
+    display: block;
+}
+.bty:hover .beauty{
+    display: block;
+}
+.main{
+    display: inline-flex;
+}
+.container{
+    margin:10px 5px 0px 86px ;
+    width:77%;
+    height: auto;
+    background-color: inherit;
+}
+.deals{
+    padding:15px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+.deals h2{
+    font-weight: 400;
+}
+.deals time{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: #7f7f7f;
+    margin: 0px 10px;
+    float: left;
+}
+.deals h2{
+    font-size: 30px;
+}
+.vm{
+position: relative;
+width: 95px;
+background-color: #2874f0;
+border: .1px solid black;
+height: 38px;
+display: flex;
+align-content: center;
+}
+.vm a{
+    width: inherit;
+    padding:10px 18px ;
+    font-size: 13px;
+}
+.common-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 353px;
+    margin: 1px 0px;
+    overflow: scroll;
+    background-color: white;
+}
+.common-col{
+    text-align: center;
+    line-height: 22px;
+    display: block;
+    margin: 0px 10px;
+}
+.common-col img{
+    width: 97px;
+    height: 154px;
+    margin: 0px 10px;
+    transition: 300ms;
+}
+.common-col img:hover{
+    transform: scale(0.9);
+}
+.common-col span{
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    cursor: pointer;display: block;
+}
+.u-name{
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.offer{
+    color: green;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+.details{
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 100px;
+}
+.bg{
+    width: 90%;
+}
+.lst{
+    justify-content: flex-start;
+}
+.ad {
+    display: flex;
+    width: 269px;
+    height: 362px;
+    margin-top: 10px;
+}
+.ad img{
+    width: inherit;
+    height: inherit;
+}
+
